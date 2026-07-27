@@ -1,15 +1,14 @@
-// Mobile Menu Toggle Script
-const menuBtn = document.getElementById('menuBtn');
-const dropdownMenu = document.getElementById('dropdownMenu');
+// Mobile Navbar Toggle functionality
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
 
-menuBtn.addEventListener('click', function() {
-    dropdownMenu.classList.toggle('active');
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
 
-// Close menu automatically when a link is clicked
-const menuLinks = document.querySelectorAll('.dropdown-menu a');
-menuLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        dropdownMenu.classList.remove('active');
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
     });
 });
