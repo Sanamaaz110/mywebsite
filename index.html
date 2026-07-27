@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denify Labs - Tech Style</title>
-    <!-- Google Fonts Link for Unique Font (Orbitron) -->
+    <title>Denify Labs - Software House</title>
+    <!-- Google Fonts: Orbitron & Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,22 +22,24 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Hero / Background Image Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2>Digital Excellence & Innovation</h2>
+                <div class="neon-line"></div>
+                <p>At Denify Labs, we drive digital transformation by delivering high-end software solutions, mobile applications, and strategic marketing worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
     <main class="content-section">
         
-        <!-- About Section -->
-        <section id="home">
-            <h2>Digital Excellence</h2>
-            <div class="neon-line"></div>
-            <p>
-                At Denify Labs, we drive digital transformation by delivering high-end software and marketing solutions. Our tech-focused approach ensures innovation and growth.
-            </p>
-        </section>
-
         <!-- Services Section -->
         <section id="services" class="section-box">
             <h3>Our Services</h3>
@@ -53,19 +55,51 @@
 
         <!-- Team Section -->
         <section id="team" class="section-box">
-            <h3>Our Management</h3>
+            <h3>Our Management Team</h3>
             <div class="neon-line"></div>
             <ul class="team-list">
-                <li><strong>Chairperson:</strong> [Name/Details]</li>
-                <li><strong>CEO:</strong> Muhammad Saad</li>
-                <li><strong>Project Manager:</strong> [Name/Details]</li>
-                <li><strong>Project Coordinator:</strong> [Name/Details]</li>
-                <li><strong>Sales Team Lead:</strong> [Name/Details]</li>
-                <li><strong>HR Manager:</strong> [Name/Details]</li>
+                <li><strong>Chairperson:</strong> Sana Maaz</li>
+                <li><strong>CEO:</strong> Raiyan Ahmad Hashmi</li>
+                <li><strong>Project Manager:</strong> Raiyan Ahmad Hashmi</li>
+                <li><strong>Project Coordinator:</strong> Daniyal Alvi</li>
+                <li><strong>Sales & Marketing Team Lead:</strong> Fouzan Khan</li>
+                <li><strong>HR Manager:</strong> Maaz Ali Mumtaz</li>
             </ul>
         </section>
 
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-box">
+            <h3>We’ll Be Glad To Assist You!</h3>
+            <div class="neon-line"></div>
+            <p class="contact-desc">If there is anything you want to talk about, please do not hesitate to contact us.</p>
+            
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Enter subject" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Denify Labs. All Rights Reserved.</p>
+    </footer>
 
     <!-- Linking JavaScript File -->
     <script src="script.js"></script>
