@@ -3,105 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denify Labs - Software House</title>
-    <!-- Google Fonts: Orbitron & Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Denify Labs | Engineering Innovation. Delivering Excellence.</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header / Navbar -->
-    <header class="navbar">
-        <div class="logo">DENIFY LABS</div>
-        <div class="menu-icon" id="menuBtn">&#9776;</div>
+    <header>
+        <div class="nav-container">
+            <div class="logo">DENIFY<span>LABS</span></div>
+            <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#team">Team</a>
+                <a href="#contact" class="cta-btn">Let's Talk</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Dropdown Navigation Menu -->
-    <nav class="dropdown-menu" id="dropdownMenu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">Next-Gen Software Agency</div>
+        <h1>Engineering Innovation. <br><span>Delivering Excellence.</span></h1>
+        <p>We transform ambitious ideas into scalable, secure, and high-performing digital products that create measurable business impact.</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View Portfolio</a>
+            <a href="#contact" class="btn-secondary">Contact Us</a>
+        </div>
+    </section>
 
-    <!-- Hero / Background Image Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h2>Digital Excellence & Innovation</h2>
-                <div class="neon-line"></div>
-                <p>At Denify Labs, we drive digital transformation by delivering high-end software solutions, mobile applications, and strategic marketing worldwide.</p>
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About <span>DenifyLabs</span></h2>
+        <p class="section-desc">Empowering businesses to grow, transform, and lead in the digital era.</p>
+        <div class="about-content">
+            <p>DenifyLabs is a global technology company delivering innovative software solutions. We specialize in custom software development, AI-powered applications, web and mobile solutions, enterprise systems, UI/UX design, cloud technologies, business automation, and digital marketing.</p>
+            <p style="margin-top: 15px;">Our mission is to combine technical excellence with strategic thinking to help startups, SMEs, and enterprises accelerate innovation, streamline operations, and unlock new opportunities.</p>
+        </div>
+
+        <div class="grid-3" style="margin-top: 40px;">
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To become a globally recognized technology partner, enabling businesses to achieve digital excellence through innovation, intelligence, and cutting-edge software solutions.</p>
+            </div>
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>To deliver world-class digital products and technology services that inspire growth, create value, and shape the future of businesses worldwide.</p>
+            </div>
+            <div class="card">
+                <h3>Why Choose Us</h3>
+                <p>Experienced engineers, designers, and strategists working closely with clients from concept to deployment to ensure every project exceeds expectations.</p>
             </div>
         </div>
     </section>
 
-    <!-- Main Content Container -->
-    <main class="content-section">
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Our Featured <span>Projects</span></h2>
+        <p class="section-desc">Explore some of the high-impact systems developed by Denify Labs.</p>
         
-        <!-- Services Section -->
-        <section id="services" class="section-box">
-            <h3>Our Services</h3>
-            <div class="neon-line"></div>
-            <ul class="services-list">
-                <li>📱 iOS Development</li>
-                <li>🤖 Android Development</li>
-                <li>💻 Web Development</li>
-                <li>🌐 Web Application</li>
-                <li>📈 Search Engine Optimization (SEO)</li>
-            </ul>
-        </section>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Global E-Commerce Platform</h3>
+                <p>Scalable online retail architecture built for international client acquisitions and fast transactions.</p>
+                <div class="card-footer">
+                    <span class="tag">Full Stack</span>
+                    <a href="https://github.com/Sanamaaz110" target="_blank">GitHub Code &rarr;</a>
+                </div>
+            </div>
 
-        <!-- Team Section -->
-        <section id="team" class="section-box">
-            <h3>Our Management Team</h3>
-            <div class="neon-line"></div>
-            <ul class="team-list">
-                <li><strong>Chairperson:</strong> Sana Maaz</li>
-                <li><strong>CEO:</strong> Raiyan Ahmad Hashmi</li>
-                <li><strong>Project Manager:</strong> Raiyan Ahmad Hashmi</li>
-                <li><strong>Project Coordinator:</strong> Daniyal Alvi</li>
-                <li><strong>Sales & Marketing Team Lead:</strong> Fouzan Khan</li>
-                <li><strong>HR Manager:</strong> Maaz Ali Mumtaz</li>
-            </ul>
-        </section>
+            <div class="card">
+                <h3>CRM Workflow Automation</h3>
+                <p>Custom tracking pipelines linking client management systems to internal project boards seamlessly.</p>
+                <div class="card-footer">
+                    <span class="tag">Automation</span>
+                    <a href="https://github.com/Sanamaaz110" target="_blank">GitHub Code &rarr;</a>
+                </div>
+            </div>
 
-        <!-- Contact Form Section -->
-        <section id="contact" class="contact-box">
-            <h3>We’ll Be Glad To Assist You!</h3>
-            <div class="neon-line"></div>
-            <p class="contact-desc">If there is anything you want to talk about, please do not hesitate to contact us.</p>
-            
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <div class="card">
+                <h3>Enterprise Cloud Dashboard</h3>
+                <p>Secure multi-tenant data management dashboard designed for corporate performance monitoring.</p>
+                <div class="card-footer">
+                    <span class="tag">Web App</span>
+                    <a href="https://github.com/Sanamaaz110" target="_blank">GitHub Code &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2 class="section-title">Meet Our <span>Leadership Team</span></h2>
+        <p class="section-desc">The brilliant minds driving innovation and success at Denify Labs.</p>
+        
+        <div class="grid-4">
+            <div class="team-card">
+                <h3>Sana Maaz</h3>
+                <p>Chairperson</p>
+            </div>
+            <div class="team-card">
+                <h3>Rayan</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-card">
+                <h3>Daniyal Alvi</h3>
+                <p>CTO</p>
+            </div>
+            <div class="team-card">
+                <h3>Fouzan Khan</h3>
+                <p>CMO</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">WE’LL BE GLAD TO <span>ASSIST YOU!</span></h2>
+        <p class="section-desc">If there is anything you want to talk about, please do not hesitate to contact us.</p>
+        
+        <div class="contact-container">
+            <form action="mailto:denifylab@gmail.com" method="POST" enctype="text/plain">
                 <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" placeholder="Enter your name" required>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" required placeholder="Your Name">
                 </div>
                 <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="Enter your email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" required placeholder="denifylab@gmail.com">
                 </div>
                 <div class="form-group">
-                    <label>Subject</label>
-                    <input type="text" placeholder="Enter subject" required>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="Subject" required placeholder="Project Inquiry">
                 </div>
                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="4" placeholder="Type your message here..." required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" rows="5" required placeholder="Write your message here..."></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
             </form>
-        </section>
-
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Denify Labs. All Rights Reserved.</p>
+        <div class="logo">DENIFY<span>LABS</span></div>
+        <p style="margin-top: 10px;">Engineering Innovation. Delivering Excellence.</p>
+        <p style="margin-top: 15px;"><a href="mailto:denifylab@gmail.com" style="color: #ec4899; text-decoration: none; font-weight: 600;">denifylab@gmail.com</a></p>
+        <div style="margin-top: 20px; font-size: 13px; color: #64748b;">&copy; 2026 Denify Labs. All rights reserved.</div>
     </footer>
 
-    <!-- Linking JavaScript File -->
+    <!-- JavaScript File Linking -->
     <script src="script.js"></script>
 </body>
 </html>
