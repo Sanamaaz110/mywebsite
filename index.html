@@ -8,8 +8,41 @@
 </head>
 <body>
 
-    <!-- Header / Navbar -->
+      <!-- Header / Navbar -->
     <header>
+        <div class="nav-container">
+            <div class="logo">DENIFY<span>LABS</span></div>
+            <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#team">Team</a>
+                <a href="#contact" class="cta-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Popup / Mobile Menu Drawer -->
+    <div id="mobileMenu" class="mobile-popup">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#projects" onclick="toggleMenu()">Projects</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+  
+<!-- Popup / Mobile Menu Drawer -->
+<div id="mobileMenu" class="mobile-popup">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
         <div class="nav-container">
             <div class="logo">DENIFY<span>LABS</span></div>
             <div class="menu-toggle" id="mobile-menu">&#9776;</div>
