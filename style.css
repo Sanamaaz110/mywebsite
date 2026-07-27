@@ -393,10 +393,10 @@ footer {
     margin-left: auto;
     cursor: pointer;
 }
-
 /* Purane links ko mobile view mein chupane ke liye */
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none !important;
     }
 }
+
