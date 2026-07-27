@@ -3,79 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denify Labs | Professional Software House Portfolio</title>
+    <title>Denify Labs - Mobile Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <header>
-        <div class="nav-container">
-            <div class="logo">DENIFY<span>LABS</span></div>
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact" class="cta-btn">Let's Talk</a>
-            </nav>
-        </div>
+    <!-- Header / Navbar with Denify Labs -->
+    <header class="navbar">
+        <div class="logo">DENIFY LABS</div>
+        <!-- Menu Toggle Button -->
+        <div class="menu-icon" id="menuBtn">&#9776;</div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="badge">Next-Gen Software Agency</div>
-        <h1>Building Scalable Software & <br><span>Digital Excellence</span></h1>
-        <p>We deliver high-end web applications, custom software solutions, and cutting-edge tech architectures for global clients.</p>
-        <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">View Portfolio</a>
-            <a href="#contact" class="btn-secondary">Contact Us</a>
-        </div>
-    </section>
+    <!-- Dropdown Navigation Menu -->
+    <nav class="dropdown-menu" id="dropdownMenu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">Our Featured <span>Projects</span></h2>
-        <p class="section-desc">Explore some of the high-impact systems developed by Denify Labs.</p>
-        
-        <div class="grid-3">
-            <!-- Project 1 -->
-            <div class="card">
-                <h3>Global E-Commerce Platform</h3>
-                <p>Scalable online retail architecture built for international client acquisitions and fast transactions.</p>
-                <div class="card-footer">
-                    <span class="tag">Full Stack</span>
-                    <a href="https://github.com/Sanamaaz110" target="_blank">GitHub Code &rarr;</a>
-                </div>
-            </div>
+    <!-- Content Section -->
+    <main class="content-section">
+        <h2>Leadership at Denify Labs</h2>
+        <div class="blue-line"></div>
+        <p>
+            At Denify Labs, we focus on driving digital excellence and delivering high-end software and marketing solutions. Our leadership team ensures continuous growth, innovation, and strong client relationships.
+        </p>
+        <p>
+            We believe that every client partnership serves as a foundation for long-term success, prioritizing real-time market insights and strategic results.
+        </p>
+    </main>
 
-            <!-- Project 2 -->
-            <div class="card">
-                <h3>CRM Workflow Automation</h3>
-                <p>Custom tracking pipelines linking client management systems to internal project boards seamlessly.</p>
-                <div class="card-footer">
-                    <span class="tag">Automation</span>
-                    <a href="https://github.com/Sanamaaz110" target="_blank">GitHub Code &rarr;</a>
-                </div>
-            </div>
+    <!-- Simple Script for Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
 
-            <!-- Project 3 -->
-            <div class="card">
-                <h3>Enterprise Cloud Dashboard</h3>
-                <p>Secure multi-tenant data management dashboard designed for corporate performance monitoring.</p>
-                <div class="card-footer">
-                    <span class="tag">Web App</span>
-                    <a href="https://github.com/Sanamaaz110" target="_blank">GitHub Code &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="logo">DENIFY<span>LABS</span></div>
-        <p>Ready to scale your business with enterprise-grade solutions? Connect with us today.</p>
-        <p style="margin-top: 20px; color: #38bdf8; font-weight: 600;">contact@denifylabs.com</p>
-        <div style="margin-top: 30px; font-size: 13px; color: #64748b;">&copy; 2026 Denify Labs. All rights reserved.</div>
-    </footer>
+        menuBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
