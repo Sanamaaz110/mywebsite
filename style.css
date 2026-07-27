@@ -387,3 +387,16 @@ footer {
     right: 30px;
     font-size: 36px;
 }
+/* 3 lines ko right side par karne ke liye */
+.menu-toggle {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* Purane links ko mobile view mein chupane ke liye */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none !important;
+    }
+}
