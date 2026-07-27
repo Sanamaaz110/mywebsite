@@ -334,3 +334,56 @@ footer {
         font-size: 32px;
     }
 }
+/* Hamburger Icon Styling */
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #ff007f; /* Aapke brand color ke mutabiq */
+    border-radius: 2px;
+}
+
+/* Popup Menu Background & Box */
+.mobile-popup {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: rgba(15, 23, 42, 0.95); /* Dark theme background */
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menu Links Inside Popup */
+.mobile-popup a {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.mobile-popup a:hover {
+    color: #ff007f;
+}
+
+/* Close Button (X) */
+.mobile-popup .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+}
