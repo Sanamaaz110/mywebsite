@@ -170,7 +170,6 @@ section {
     margin-bottom: 50px;
 }
 
-/* About & Vision Grid */
 .about-content {
     color: #94a3b8;
     font-size: 16px;
@@ -244,7 +243,6 @@ section {
     font-size: 14px;
 }
 
-/* Team Section Styles */
 .team-card {
     text-align: center;
     background: #1e293b;
@@ -266,7 +264,6 @@ section {
     margin-bottom: 0;
 }
 
-/* Contact Section Styles */
 .contact-container {
     max-width: 700px;
     margin: 0 auto;
@@ -303,7 +300,6 @@ section {
     border-color: #ec4899;
 }
 
-/* Footer */
 footer {
     background-color: #1e293b;
     border-top: 1px solid #334155;
@@ -313,7 +309,6 @@ footer {
     font-size: 14px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
