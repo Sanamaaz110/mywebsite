@@ -3,51 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denify Labs - Mobile Menu</title>
+    <title>Denify Labs - Tech Style</title>
+    <!-- Google Fonts Link for Unique Font (Orbitron) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navbar with Denify Labs -->
+    <!-- Header / Navbar -->
     <header class="navbar">
         <div class="logo">DENIFY LABS</div>
-        <!-- Menu Toggle Button -->
         <div class="menu-icon" id="menuBtn">&#9776;</div>
     </header>
 
     <!-- Dropdown Navigation Menu -->
     <nav class="dropdown-menu" id="dropdownMenu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Content Section -->
+    <!-- Main Content -->
     <main class="content-section">
-        <h2>Leadership at Denify Labs</h2>
-        <div class="blue-line"></div>
-        <p>
-            At Denify Labs, we focus on driving digital excellence and delivering high-end software and marketing solutions. Our leadership team ensures continuous growth, innovation, and strong client relationships.
-        </p>
-        <p>
-            We believe that every client partnership serves as a foundation for long-term success, prioritizing real-time market insights and strategic results.
-        </p>
+        
+        <!-- About Section -->
+        <section id="home">
+            <h2>Digital Excellence</h2>
+            <div class="neon-line"></div>
+            <p>
+                At Denify Labs, we drive digital transformation by delivering high-end software and marketing solutions. Our tech-focused approach ensures innovation and growth.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-box">
+            <h3>Our Services</h3>
+            <div class="neon-line"></div>
+            <ul class="services-list">
+                <li>📱 iOS Development</li>
+                <li>🤖 Android Development</li>
+                <li>💻 Web Development</li>
+                <li>🌐 Web Application</li>
+                <li>📈 Search Engine Optimization (SEO)</li>
+            </ul>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="section-box">
+            <h3>Our Management</h3>
+            <div class="neon-line"></div>
+            <ul class="team-list">
+                <li><strong>Chairperson:</strong> [Name/Details]</li>
+                <li><strong>CEO:</strong> Muhammad Saad</li>
+                <li><strong>Project Manager:</strong> [Name/Details]</li>
+                <li><strong>Project Coordinator:</strong> [Name/Details]</li>
+                <li><strong>Sales Team Lead:</strong> [Name/Details]</li>
+                <li><strong>HR Manager:</strong> [Name/Details]</li>
+            </ul>
+        </section>
+
     </main>
 
-    <!-- Simple Script for Menu Toggle -->
-    <script>
-        const menuBtn = document.getElementById('menuBtn');
-        const dropdownMenu = document.getElementById('dropdownMenu');
-
-        menuBtn.addEventListener('click', () => {
-            dropdownMenu.classList.toggle('active');
-        });
-    </script>
-
+    <!-- Linking JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
